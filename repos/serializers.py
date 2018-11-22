@@ -3,9 +3,10 @@ from repos.models import Repo
 
 
 class RepoSerializer(serializers.Serializer):
-    id = serializers.IntegerField(read_only=True)
-    title = serializers.CharField(required=False, allow_blank=True, max_length=100)
-    url = serializers.ChoiceField(choices=LANGUAGE_CHOICES, default='python')
+    id      = serializers.IntegerField(read_only=True)
+    title   = serializers.CharField(required=False, allow_blank=True, max_length=100)
+    url     = serializers.CharField(required=False, allow_blank=True, max_length=100)
+
 
     def create(self, validated_data):
         """
