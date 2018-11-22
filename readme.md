@@ -1,9 +1,9 @@
-### Project Visualizer
+# Project Visualizer
 
 ## Getting Started
 
-# Dependencies
+### Dependencies
 
-# Configuring Database
+### Configuring Database
 
-# Starting Server
+### Starting Server
