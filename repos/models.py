@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Snippet(models.Model):
+class Repo(models.Model):
     created     = models.DateTimeField(auto_now_add=True)
     title       = models.CharField(max_length=100, blank=True, default='')
     url         = models.TextField()
