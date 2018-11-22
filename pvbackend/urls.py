@@ -18,10 +18,10 @@ from django.urls import path
 
 from django.conf.urls import url, include
 from rest_framework import routers
-from pvbackend.repos import views
+from pvbackend.users import views
 
 router = routers.DefaultRouter()
-router.register(r'repos', views.RepoViewSet)
+router.register(r'users', views.UserViewSet)
 
 
 
