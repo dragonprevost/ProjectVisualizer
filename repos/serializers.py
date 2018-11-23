@@ -3,11 +3,15 @@ from repos.models import Repo
 
 
 class RepoSerializer(serializers.Serializer):
-    id      = serializers.IntegerField(read_only=True)
-    title   = serializers.CharField(required=False, allow_blank=True, max_length=100)
-    url     = serializers.CharField(required=False, allow_blank=True, max_length=100)
+    id          = serializers.IntegerField(read_only=True)
+    title       = serializers.CharField(required=False, allow_blank=True, max_length=100)
+    url         = serializers.CharField(required=False, allow_blank=True, max_length=100)
+    user_name   = serializers.CharField(required=False, allow_blank=True, max_length=100)
+    repo_name   = serializers.CharField(required=False, allow_blank=True, max_length=100)
+    branch      = serializers.CharField(required=False, allow_blank=True, max_length=100)
 
-
+    
+    
     def create(self, validated_data):
         """
         Create and return a new `Snippet` instance, given the validated data.
