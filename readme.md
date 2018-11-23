@@ -4,8 +4,8 @@ This is the backend to Vlyzer. A software platform that provides visual represen
 The backend of Vlyzer is written in Python3 using the django rest framework. Providing an interface for a custom data base designed to store user data and account settings. 
 
 ### Dependencies
-- Python3 ( [mac]()/[linux]()/[windows]() )
-- DjangoRestFramework ( [mac]()/[linux]()/[windows]() )
+- Python3 installs - ( [mac](https://www.python.org/downloads/mac-osx/) / [linux](https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux-python.html) / [windows](https://www.python.org/downloads/) )
+- DjangoRestFramework [install]( https://www.django-rest-framework.org/#installation )
 
 
 
